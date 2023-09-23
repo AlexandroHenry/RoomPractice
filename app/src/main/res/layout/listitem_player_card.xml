@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="180dp">
+
+    <ImageView
+        android:id="@+id/playerImg"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/nameTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:text="즐라탄 이브라히모비치"
+        app:layout_constraintStart_toEndOf="@+id/playerImg"
+        app:layout_constraintTop_toTopOf="@+id/playerImg" />
+
+    <TextView
+        android:id="@+id/teamTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="AC Milan"
+        app:layout_constraintBottom_toTopOf="@+id/nationalityTxt"
+        app:layout_constraintStart_toStartOf="@+id/nameTxt"
+        app:layout_constraintTop_toBottomOf="@+id/nameTxt" />
+
+    <TextView
+        android:id="@+id/nationalityTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sweden"
+        app:layout_constraintBottom_toBottomOf="@+id/playerImg"
+        app:layout_constraintStart_toStartOf="@+id/teamTxt" />
+</androidx.constraintlayout.widget.ConstraintLayout>

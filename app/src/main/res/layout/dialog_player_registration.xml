@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="축구 선수 등록"
+        android:maxLines="1"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_gravity="center"/>
+
+    <EditText
+        android:id="@+id/editTextName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="이름" />
+
+    <EditText
+        android:id="@+id/editTextTeam"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="팀" />
+
+    <EditText
+        android:id="@+id/editTextNationality"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="국적" />
+
+    <Button
+        android:id="@+id/buttonRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="등록"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp" />
+</LinearLayout>
